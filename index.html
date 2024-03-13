@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Triangle</title>
+</head>
+<body>
+   
+<p id="demo"></p>
+        <script>
+
+         
+            var a=prompt("Please input the first measurement of the first side of the triangle");
+            var b=prompt("Please input the second measurement of the second side of the triangle");
+            var c=prompt("Please input the third measurement of the third side of the triangle");
+             
+         
+            
+            if (isNaN(a), isNaN(b), isNaN(c)) {
+            alert("Invalid inputs. Please enter real numbers!")
+            } else {
+                findTheTriangle(a,b,c)
+            }
+            
+
+
+            
+            function findTheTriangle(a,b,c){
+                if (a === b && b === c) {
+                    window.alert("Your sides are: " + a + ", " + b  + ", and " + c + "!" + "\n" + "Your triangle is an Equilateral!") 
+            } else if (a === b || b === c ) {
+                window.alert("Your sides are: " + a + ", " + b  + ", and " + c + "!" + "\n" + "Your triangle is an Isoceles!") 
+            } else if (a === c || b === c ) {
+                window.alert("Your sides are: " + a + ", " + b  + ", and " + c + "!" + "\n" + "Your triangle is an Isoceles!") 
+            }
+            else {
+                window.alert("Your sides are: " + a + ", " + b  + ", and " + c + "!" + "\n" + "Your triangle is an Scalene!")
+            }
+            }
+
+            
+            
+           
+        </script>
